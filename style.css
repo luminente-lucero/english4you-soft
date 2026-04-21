@@ -1,0 +1,42 @@
+/* Decoraciones Soft-Vibrant Avanzadas */
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.glass-card:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: scale(1.03) translateY(-10px);
+    border-color: #6366f1;
+}
+
+/* Scrollbar personalizada con estilo suave */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #6366f1, #fb7185);
+    border-radius: 20px;
+    border: 3px solid #f8fafc;
+}
+
+/* Animación de entrada de texto */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header h2, header p {
+    animation: fadeInUp 1s ease-out forwards;
+}
